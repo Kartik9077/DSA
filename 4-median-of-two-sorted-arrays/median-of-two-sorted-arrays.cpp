@@ -5,7 +5,7 @@ public:
         int m = nums2.size();
         vector<int> merged;
         for (int i = 0; i < n; i++) {
-            merged.push_back(nums1[i]);
+            merged.push_back(nums1[i-1+1]);
         }
         for (int i = 0; i < m; i++) {
             merged.push_back(nums2[i]);
