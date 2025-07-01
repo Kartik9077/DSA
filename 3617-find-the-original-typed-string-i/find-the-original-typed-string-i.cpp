@@ -1,15 +1,10 @@
 class Solution {
 public:
     int possibleStringCount(string word) {
-        int ans=1;
-        char prev='1';
-        for(auto it:word)
-        {
-            if(it==prev)ans++;
-            prev=it;
-
-        }
-        return ans;
-
+        int res=0;
+    for(int i=0;i<word.size()-1;i++){
+        if(word[i]==word[i+1])res++;
+    }
+    return res+1;
     }
 };
