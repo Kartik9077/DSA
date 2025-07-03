@@ -32,7 +32,6 @@ public:
     NestedInteger deserialize(string s) {
        stack<NestedInteger> S;
         NestedInteger curr;
-
         for (int i = 0; i < s.size();) {
             if (std::isdigit(s[i]) || s[i] == '-') {
                 bool negative = false;
@@ -56,7 +55,6 @@ public:
                 i++;
             }
         }
-
         return curr.getList()[0]; 
     }
 };
