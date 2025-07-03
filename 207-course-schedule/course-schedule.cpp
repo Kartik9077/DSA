@@ -1,35 +1,30 @@
 class Solution {
 public:
-    bool topologicalsortCheck(unordered_map<int, vector<int>>& adj, int numCourse, vector<int>& indegree) {
-        queue<int> qu;
-        int count = 0;
-        for (int i = 0; i < numCourse; i++) {
-            if (indegree[i] == 0)
-                qu.push(i);
-        }
-        while (!qu.empty()) {
-            int u = qu.front();
-            qu.pop();
-            count++; 
-            for (auto v : adj[u]) {
-                indegree[v]--;
-                if (indegree[v] == 0) {
-                    qu.push(v);
-                }
-            }
-        }
-        return count == numCourse;
+bool solve(vector<int>in,unordered_map<int,vector<int>>mpp,int n){
+    queue<int>q;
+    for(int i=0;i<n;i++){
+        if(in[i]==0)q.push(i);
     }
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        unordered_map<int, vector<int>> adj;
-        vector<int> indegree(numCourses, 0);
-        for (auto vec : prerequisites) {
-            int u = vec[0];
-            int v = vec[1];
-            adj[v].push_back(u);  
-            indegree[u]++;        
+    int count=0;
+    while(!q.empty()){
+        int a=q.front();
+        q.pop();
+         count++;
+         for(auto it:mpp[a]){
+            in[it]--;
+            if(in[it]==0)q.push(it);
+         }
+    }
+    return count>=n;
+}
+    bool canFinish(int n, vector<vector<int>>& p) {
+        unordered_map<int,vector<int>>mpp;
+        vector<int>in(n,0);
+        for(auto it:p){
+            int a=it[0],b=it[1];
+            mpp[b].push_back(a);
+            in[a]++;
         }
-
-        return topologicalsortCheck(adj, numCourses, indegree);
+        return solve(in,mpp,n);
     }
 };
