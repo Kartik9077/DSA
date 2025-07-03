@@ -9,13 +9,14 @@ bool solve(vector<int>in,unordered_map<int,vector<int>>mpp,int n){
     while(!q.empty()){
         int a=q.front();
         q.pop();
-         count++;
+         count++; if(count>=n)return 1;
          for(auto it:mpp[a]){
             in[it]--;
             if(in[it]==0)q.push(it);
          }
+
     }
-    return count>=n;
+    return 0;
 }
     bool canFinish(int n, vector<vector<int>>& p) {
         unordered_map<int,vector<int>>mpp;
