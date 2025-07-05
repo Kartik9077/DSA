@@ -12,11 +12,12 @@
 class Solution {
 public:
   TreeNode* solve(TreeNode* r1,TreeNode* r2){
-    if(!r1&&!r2)return nullptr;
+    if(!r1)return r2;
+    if(!r2)return r1;
     int su=(r1?r1->val:0) + (r2? r2->val:0);
     TreeNode* root=new TreeNode(su);
-      root->left=solve(r1?r1->left:nullptr,r2?r2->left:nullptr);
-    root->right=solve(r1?r1->right:nullptr,r2?r2->right:nullptr);
+      root->left=solve(r1->left,r2->left);
+    root->right=solve(r1->right,r2->right);
   
     return root;
   }
