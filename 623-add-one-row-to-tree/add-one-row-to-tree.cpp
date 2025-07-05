@@ -11,32 +11,22 @@
  */
 class Solution {
 public:
+   void  solve(TreeNode* root,int val,int idx,int &depth){
+    if(root==nullptr)return;
+    if(idx==depth-1){
+        TreeNode* lefti=new TreeNode(val,root->left,nullptr);
+        TreeNode* righti=new TreeNode(val,nullptr,root->right);
+        root->left=lefti;
+        root->right=righti;
+    }
+     solve(root->left,val,idx+1,depth);
+    solve(root->right,val,idx+1,depth);
+  }
     TreeNode* addOneRow(TreeNode* root, int val, int depth) {
-        if(!root) return root;
-        queue<pair<TreeNode*, int> > q;
-        if(depth == 1) {
-            TreeNode* newRoot = new TreeNode(val, root, nullptr);
-            return newRoot;
+        if(depth==1){
+            TreeNode* x=new TreeNode(val,root,nullptr);
+            return x;
         }
-        q.push({root, 1});
-        while(!q.empty()){
-            auto [curr, dep] = q.front();
-            q.pop();
-
-            if(dep == depth - 1){
-                TreeNode* leftNode = new TreeNode(val, curr->left, nullptr);
-                TreeNode* rightNode = new TreeNode(val, nullptr, curr->right);
-                curr->left = leftNode;
-                curr->right = rightNode;
-            }
-            if(curr->left != nullptr){
-                q.push({curr->left, dep+1});
-            }
-            if(curr->right != nullptr){
-                q.push({curr->right, dep+1});
-            }
-        }
-        return root;
-        
+        solve(root,val,1,depth);return root;
     }
 };
