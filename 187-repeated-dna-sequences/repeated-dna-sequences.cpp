@@ -8,9 +8,7 @@ public:
          for(int i=10;i<=s.size();i++)
          {
             int j=i-10;
-            while(j<i){
-                a+=s[j++];
-            }
+           a=s.substr(j,10);
             mpp[a]++;
             a="";
          }
