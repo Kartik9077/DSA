@@ -1,15 +1,18 @@
 class Solution {
 public:
     int leastBricks(vector<vector<int>>& wall) {
-        unordered_map<long long, int> freq;
-        int maxi = 0;
-        for(int i = 0, n = wall.size(); i < n; ++i){
-            long long sum = 0;
-            for(int j = 0, m = wall[i].size() - 1; j < m; ++j){
-                sum += wall[i][j];
-                maxi = max(maxi , ++freq[sum]);
+        unordered_map<int,int>mpp;
+        for(int i=0;i<wall.size();i++){
+            __int128 sum=0;
+            for(int j=0;j<wall[i].size()-1;j++){
+                sum+=wall[i][j];
+                mpp[sum]++;
             }
         }
-        return wall.size() - maxi;
+        int ans=wall.size();
+        for(auto it:mpp){
+            ans=min(ans,int(wall.size())-it.second);
+        }
+        return ans;
     }
 };
