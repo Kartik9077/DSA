@@ -11,20 +11,14 @@
  */
 class Solution {
 public:
-   TreeNode* solve(TreeNode* root,TreeNode* ans){
-    ans=new TreeNode(root->val);
-    if(root->right){
-        ans->left=solve(root->right,ans);
-    }
-    if(root->left){
-        ans->right=solve(root->left,ans);
-    }
-    return ans;
-   }
     TreeNode* invertTree(TreeNode* root) {
-        if(root==nullptr)return root;
-        TreeNode * ans;
-        return solve(root,ans);
+        if(root==nullptr)return nullptr;
+        TreeNode* temp=root->right;
+        root->right=root->left;
+        root->left=temp;
+        if(root->right)invertTree(root->right);
+        if(root->left)invertTree(root->left);
+        return root;
 
     }
 };
