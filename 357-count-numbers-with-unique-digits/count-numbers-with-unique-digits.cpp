@@ -1,26 +1,15 @@
 class Solution {
 public:
-int check(int n){
-    unordered_set<int>st;
-    while(n>0){
-        int rem=n%10;
-        if(st.find(rem)!=st.end())return 1;
-        st.insert(rem);
-        n/=10;
-    }
-    return 0;
-
-}
-    int countNumbersWithUniqueDigits(int n){
-        if(n==7)return 712891;
-        if(n==8)return 2345851;
-        int res=pow(10,n);
-        int count=0;
-        for(int i=0;i<pow(10,n);i++){
-            count+=check(i);
-
+    int countNumbersWithUniqueDigits(int n) {
+        if(n==0)return 1;
+        if(n==1)return 10;
+        int to=10;
+        int curr=9;
+        for(int i=2;i<=n;i++){
+        curr *= (10 - (i - 1));
+        to+=curr;
         }
-        res-=count;
-        return res;
+        return to;
+        
     }
 };
