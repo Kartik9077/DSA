@@ -1,17 +1,16 @@
 class Solution {
 public:
-  int solve(int n,int x,int y,int pos){
-    if(n==0)return 1;
-    if(n==1)return 10;
-      if(pos>n)return x;
-     y*=(10-(pos-1));
-     x+=y;
-     return solve(n,x,y,pos+1);
-      
-  }
     int countNumbersWithUniqueDigits(int n) {
-       
-        return solve(n,10,9,2);
+        vector<int>dp(n+1,0);
+        dp[0]=1;
+          if(n==0)return dp[n];
+        dp[1]=10;
+        int curr=dp[1]-dp[0];
+        for(int i=2;i<=n;i++){
+        curr *= (10 - (i - 1));
+         dp[i]+=dp[i-1]+curr;
+        }
+        return dp[n];
         
     }
 };
