@@ -37,11 +37,14 @@ public:
     vector<vector<string>> solveNQueens(int n) {
         vector<vector<string>>ans;
         vector<string>temp(n);
+        string k;
+        for(int i=0;i<n;i++){
+            k+='.';
+
+        }
        vector<int>st(2*n-1,0),lt(2*n-1,0);
         for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-        temp[i].push_back('.');
-        }
+            temp[i]=k;
         }
         vector<bool>column(n,0);
         solve(n,temp,ans,column,0,st,lt);
