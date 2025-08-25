@@ -11,7 +11,7 @@ public:
                 curr.push_back(mat[k][p]);
                 k++;p--;
             }
-            if(z%2==0)reverse(curr.begin(),curr.end());
+            if(!(z&1))reverse(curr.begin(),curr.end());
             for(auto it:curr)ans.push_back(it);
             curr.clear();
             if(j+1==mat[0].size())i++;
