@@ -13,7 +13,7 @@
 	</li>
 </ul>
 
-<p>After each round is over, the winners are lined back up in the row based on the <strong>original ordering</strong> assigned to them initially (ascending order).</p>
+<p>After each round is over, the winners are lined back u in the row based on the <strong>original ordering</strong> assigned to them initially (ascending order).</p>
 
 <p>The players numbered <code>firstPlayer</code> and <code>secondPlayer</code> are the best in the tournament. They can win against any other player before they compete against each other. If any two other players compete against each other, either of them might win, and thus you may <strong>choose</strong> the outcome of this round.</p>
 
