@@ -19,7 +19,7 @@
 <strong>Output:</strong> []
 </pre>
 
-<p><strong class="example">Example 3:</strong></p>
+<p><strong class="example">Example 3:</stron></p>
 
 <pre>
 <strong>Input:</stron> list1 = [], list2 = [0]
