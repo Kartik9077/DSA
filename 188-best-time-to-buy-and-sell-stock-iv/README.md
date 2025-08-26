@@ -18,7 +18,7 @@
 <pre>
 <strong>Input:</strong> k = 2, prices = [3,2,6,5,0,3]
 <strong>Output:</strong> 7
-<strong>Explanation:</strong> Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+<strong>Explanaton:</strong> Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
 </pre>
 
 <p>&nbsp;</p>
