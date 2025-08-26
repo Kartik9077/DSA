@@ -8,7 +8,7 @@
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/10/03/merge_ex1.jpg" style="width: 662px; height: 302px;" />
 <pre>
-<strong>Input:</strong> list1 = [1,2], list2 = [1,3,4]
+<strong>Input:</strong> list1 = [1,2], list2 = [1,3]
 <strong>Output:</strong> [1,1,2,3,4,4]
 </pre>
 
