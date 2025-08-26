@@ -7,7 +7,7 @@
 	<li><code>maxBoxes</code> and <code>maxWeight</code> are the respective box and weight limits of the ship.</li>
 </ul>
 
-<p>The boxes need to be delivered <strong>in the order they are given</strong>. The ship will follow these steps:</p>
+<p>The boxes need to be delivered <strong>in the they are given</strong>. The ship will follow these steps:</p>
 
 <ul>
 	<li>The ship will take some number of boxes from the <code>boxes</code> queue, not violating the <code>maxBoxes</code> and <code>maxWeight</code> constraints.</li>
