@@ -8,7 +8,7 @@
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> k = 2, prices = [2,4,1]
+<strong>Input:</strong> k = 2, pricess = [2,4,1]
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.
 </pre>
