@@ -24,8 +24,8 @@
 <pre>
 <strong>Input:</strong> boxes = [[1,1],[2,1],[1,1]], portsCount = 2, maxBoxes = 3, maxWeight = 3
 <strong>Output:</strong> 4
-<strong>Explanation:</strong> The optimal strategy is as follows: 
-- The ship takes all the boxes in the queue, goes to port 1, then port 2, then port 1 again, then returns to storage. 4 trips.
+<strong>Explanation:</strong> The optimal strategy is as follows:
+- The ship takes all the boxes in the queue, goes to port 1,then port 2, then port 1 again, then returns to storage. 4 trips.
 So the total number of trips is 4.
 Note that the first and third boxes cannot be delivered together because the boxes need to be delivered in order (i.e. the second box needs to be delivered at port 2 before the third box).
 </pre
