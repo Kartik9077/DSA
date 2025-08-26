@@ -37,7 +37,6 @@ public:
     }
 
     ~List() {
-        // Clean up all nodes (except sentinels)
         Node* curr = head;
         while (curr) {
             Node* next = curr->next;
