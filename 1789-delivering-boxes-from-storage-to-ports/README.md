@@ -20,7 +20,7 @@
 <p>Return <em>the <strong>minimum</strong> number of <strong>trips</strong> the ship needs to make to deliver all boxes to their respective ports.</em></p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p
+<p><strong class="example">Example 1:</strong></p>
 <pre>
 <strong>Input:</strong> boxes = [[1,1],[2,1],[1,1]], portsCount = 2, maxBoxes = 3, maxWeight = 3
 <strong>Output:</strong> 4
