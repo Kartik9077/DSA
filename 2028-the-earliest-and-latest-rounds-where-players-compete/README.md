@@ -26,7 +26,7 @@
 <strong>Input:</strong> n = 11, firstPlayer = 2, secondPlayer = 4
 <strong>Output:</strong> [3,4]
 <strong>Explanation:</strong>
-One possible scenario which leads to the earliest round number:
+One possible scenario which leads to the earliest round numbers:
 First round: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 Second round: 2, 3, 4, 5, 6, 11
 Third round: 2, 3, 4
