@@ -7,7 +7,7 @@ public:
         sum += (*r)[1];
         while(min(pos - 2 * (*l)[0] + (*r)[0], 2 * (*r)[0] - (*l)[0] - pos) > k)
             sum -= (*l++)[1];
-        max_sum = max(max_sum, sum);
+        max_sum = max(max_sum,sum);
     }
     return max_sum;
     }
