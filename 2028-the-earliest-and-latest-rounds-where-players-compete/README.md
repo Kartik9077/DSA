@@ -3,7 +3,7 @@
 <p>The tournament consists of multiple rounds (starting from round number <code>1</code>). In each round, the <code>i<sup>th</sup></code> player from the front of the row competes against the <code>i<sup>th</sup></code> player from the end of the row, and the winner advances to the next round. When the number of players is odd for the current round, the player in the middle automatically advances to the next round.</p>
 
 <ul>
-	<li>For example, if the row consists of players <code>1, 2, 4, 6, 7</code>
+	<li>For example, if the row consists of players <code>1,2, 4, 6, 7</code>
 
 	<ul>
 		<li>Player <code>1</code> competes against player <code>7</code>.</li>
