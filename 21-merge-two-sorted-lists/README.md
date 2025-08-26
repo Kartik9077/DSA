@@ -22,7 +22,7 @@
 <p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> list1 = [], list2 = [0]
+<strong>Input:</stron> list1 = [], list2 = [0]
 <strong>Output:</strong> [0]
 </pre>
 
