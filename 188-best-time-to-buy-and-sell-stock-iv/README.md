@@ -5,7 +5,7 @@
 <p><strong>Note:</strong> You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).</p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+<p><strong class="example">Example 1</strong></p>
 
 <pre>
 <strong>Input:</strong> k = 2, pricess = [2,4,1]
