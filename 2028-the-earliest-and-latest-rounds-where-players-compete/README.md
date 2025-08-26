@@ -30,7 +30,7 @@ One possible scenario which leads to the earliest round number:
 First round: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 Second round: 2, 3, 4, 5, 6, 11
 Third round: 2, 3, 4
-One possible scenario which leads to the latest round number:
+One possible scenario which leads to the latest round number
 First round: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 Second round: 1, 2, 3, 4, 5, 6
 Third round: 1, 2, 4
