@@ -2,7 +2,7 @@
 
 <p>Find the maximum profit you can achieve. You may complete at most <code>k</code> transactions: i.e. you may buy at most <code>k</code> times and sell at most <code>k</code> times.</p>
 
-<p><strong>Note</strong> You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).</p>
+<p><strong>Note:</strong> You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
