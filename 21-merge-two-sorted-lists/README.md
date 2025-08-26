@@ -12,7 +12,7 @@
 <strong>Output:</strong> [1,1,2,3,4,4]
 </pre>
 
-<p><strong class="example">Example 2:</strong></p>
+<p><strong class="example">Example:</strong></p>
 
 <pre>
 <strong>Input:</strong> list = [], list2 = []
