@@ -22,7 +22,7 @@
 
 <pre>
 <strong>Input:</strong> s = &quot;ab&quot
-<strong>Output:</strong> 1
+<strong>Output:</strong> 
 </pre>
 
 <p>&nbsp;</p>
