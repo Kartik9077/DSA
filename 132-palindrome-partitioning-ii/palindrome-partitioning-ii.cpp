@@ -6,7 +6,7 @@ public:
             if (l == 0)
                 dp[r] = 0;
             else
-                dp[r] = min(dp[r], dp[l - 1] + 1
+                dp[r] = min(dp[r], dp[l - 1] + 1;
             l--
             r++;
         }
