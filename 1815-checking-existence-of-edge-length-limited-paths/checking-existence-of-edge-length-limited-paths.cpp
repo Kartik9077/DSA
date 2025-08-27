@@ -6,6 +6,7 @@ public:
         if (x != parent[x]) {
             parent[x] = find(parent[x]); 
             
+            
         }
         return parent[x];}
     void Union(int x, int y) {
