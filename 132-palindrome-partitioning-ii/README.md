@@ -11,7 +11,7 @@
 <strong>Explanation:</strong> The palindrome partiionin [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut
 </pre>
 
-<p><strong class="example">Example 2:</strong></p
+<p><strong class="example">Example 2:</strong></
 
 <pre>
 <strong>Input:</strong> s = &quot;a&quot
