@@ -4,7 +4,7 @@
 <ul>
 	<li><code>ports<sub>​​i</sub></code> is the port where you need to deliver the <code>i<sup>th</sup></code> box and <code>weights<sub>i</sub></code> is the weight of the <code>i<sup>th</sup></code> box.</li>
 	<li><code>portsCount</code> is the number of ports.</li>
-	<li><code>maxBoxes</code> and <code>maxWeight</code> are the respective box and weight limits of the ship.</li>
+	<li><code>maxBoxes</code> and <code>maxWeight</code> are the respective box and weight limit of the ship.</li>
 </ul>
 
 <p>The boxes need to be delivered <strong>in the they are given</strong>. The ship will follow these steps:</p>
