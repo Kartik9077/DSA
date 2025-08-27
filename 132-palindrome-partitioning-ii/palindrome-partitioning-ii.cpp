@@ -16,7 +16,7 @@ public:
         vector<int> dp(n, INT_MAX)
         for (int i = 0; i < n; i++) {
             helper(i, i, s, dp);     
-            helper(i, i + 1, s, dp);
+            helper(i, i + 1, s, dp)
         }
         return dp[n - 1];
         //a
