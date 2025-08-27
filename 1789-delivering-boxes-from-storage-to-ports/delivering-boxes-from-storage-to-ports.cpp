@@ -8,7 +8,7 @@ public:
         dp[N] = 0; // base case
         ports[N] = 1;
 
-        for (int i = N - 1, end = N,takn_boxes= 0,weight =0,last_port=boxes.back()[0];i >= 0; --i) {
+        for (int i = N - 1, end = N,takn_boxes= 0,weight=0,last_port=boxes.back()[0];i >= 0; --i) {
             const int port = boxes[i][0], w = boxes[i][1];
             weight += w;
             taken_boxes += 1;
