@@ -2,6 +2,7 @@ class Solution {
 public:
 int atmostK(vector<int>& nums, int k){
         int n=nums.size();
+        
         int cnt=0;
         int r=0;int l=0;
         unordered_map<int,int>m;   
