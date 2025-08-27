@@ -13,7 +13,7 @@
 <p><strong class="example">Example 2:</strong></
 
 <pre>
-<strong>Input:</strong> s = &quot;a&quot
+<strong>Input:</strong> s = &quot;a&quote
 <strong>Output:</strong> 0
 </pre>
 
