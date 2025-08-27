@@ -14,7 +14,7 @@ public:
     int minCut(string s) {
         int n = s.size();
         vector<int> dp(n, INT_MAX)
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++){
             helper(i, i, s, dp);     
             helper(i, i + 1, s, dp)
         }
