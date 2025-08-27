@@ -28,7 +28,6 @@ public:
             parent[i] = i;
             rank[i] = 0;
         }
-
         for (int i = 0; i < queries.size(); i++) {
             queries[i].push_back(i); 
         }
