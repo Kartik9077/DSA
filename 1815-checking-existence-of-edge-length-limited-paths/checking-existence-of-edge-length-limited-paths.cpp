@@ -11,6 +11,7 @@ public:
 
 
     void Union(int x, int y) {
+        
         int x_parent = find(x);
         int y_parent = find(y);
         if (x_parent == y_parent) return;
