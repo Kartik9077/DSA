@@ -9,7 +9,7 @@ public:
                 dp[r] = min(dp[r], dp[l - 1] + 1
             l--
             r++;
-        }
+        
     }
     int minCut(string s) {
         int n = s.size();
