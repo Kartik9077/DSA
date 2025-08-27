@@ -10,7 +10,7 @@
 <p>The boxes need to be delivered <strong>in the they are given</strong>. The ship will follow these steps:</p>
 
 <ul>
-	<li>The ship will take some number of boxes from the <code>boxes</code> queue, not violating the <code>maxBoxes</code> and <code>maxWeight</code> constraints.</li>
+	<li>The ship will take some number of boxes from the <code>boxes</code> queue, not violating the <code>maxBoxes</code> and <code>maxWeight</code> constraints.</li
 	<li>For each loaded box <strong>in order</strong>, the ship will make a <strong>trip</strong> to the port the box needs to be delivered to and deliver it. If the ship is already at the correct port, no <strong>trip</strong> is needed, and the box can immediately be delivered.</li>
 	<li>The ship then makes a return <strong>trip</strong> to storage to take more boxes from the queue.</li>
 </ul>
