@@ -29,6 +29,6 @@
 <p><strong>Constraints:</strong></p
 
 <ul>
-	<li><code>1 &lt;= s.length &lt;= 2000</code></li>
+	<li><code>1 &lt;= s.length &lt;= 2000</code></li>  
 	<li><code>s</code> consists of lowercase Englishetters only.</li>
 </ul>
