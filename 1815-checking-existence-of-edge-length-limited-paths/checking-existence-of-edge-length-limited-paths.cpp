@@ -18,7 +18,6 @@ public:
             
         } else {
             parent[x_parent] = y_parent;
-        
             rank[y_parent]++;
     }
     }
