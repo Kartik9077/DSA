@@ -7,7 +7,7 @@ public:
                 dp[r] = 0;
             else
                 dp[r] = min(dp[r], dp[l - 1] + 1);
-            l--;
+            l--
             r++;
         }
     }
