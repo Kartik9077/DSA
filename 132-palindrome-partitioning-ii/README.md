@@ -17,7 +17,7 @@
 <strong>Output:</strong> 0
 </pre>
 
-<p><strong class="example">Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p
 
 
 <pre>
