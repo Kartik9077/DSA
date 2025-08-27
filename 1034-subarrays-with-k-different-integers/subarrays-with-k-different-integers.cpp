@@ -6,7 +6,7 @@ int atmostK(vector<int>& nums, int k){
         int r=0;int l=0;
         unordered_map<int,int>m;   
         while(r<n){
-            m[nums[r]]++;
+             m[nums[r]]++;
             while(m.size()>k){ 
                 m[nums[l]]--;
                 if(m[nums[l]]==0){ 
