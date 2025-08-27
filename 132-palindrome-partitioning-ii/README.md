@@ -21,7 +21,7 @@
 
 
 <pre>
-<strong>Input:</strong> s = &quot;ab&quote
+<strong>Input:</strong> s = &quot;ab&quo
 <strong>Output:</strong> 
 </pre>
 
