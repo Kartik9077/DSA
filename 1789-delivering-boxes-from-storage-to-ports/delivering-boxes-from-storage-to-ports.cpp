@@ -23,7 +23,7 @@ public:
             }
             if (pq.size()) {
                 const auto [key, other_box] = pq.top();
-                dp[i] = min((ports[i] - ports[other_box] + 2) + key, 2 + dp[i + 1]);
+                dp[i] = min((ports[i] - ports[other_box] + 2) + key,2 + dp[i + 1]);
             }
             else {
                 dp[i] = 2 + dp[i + 1];
