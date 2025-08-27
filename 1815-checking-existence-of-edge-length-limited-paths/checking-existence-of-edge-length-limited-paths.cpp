@@ -23,9 +23,7 @@ public:
     }
     }
     vector<bool> distanceLimitedPathsExist(int n, vector<vector<int>>& edgeList,vector<vector<int>>& queries) {
-        
         parent.resize(n);
-        
         rank.resize(n);
         for (int i = 0; i < n; i++) {
             parent[i] = i;
