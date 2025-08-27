@@ -6,7 +6,7 @@
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> s = &quot;aab&quot;
+<strong>Input:</strong> s = &quot;aab&quot
 <strong>Output:</strong> 1
 <strong>Explanation:</strong> The palindrome partitioning [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut.
 </pre>
