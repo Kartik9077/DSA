@@ -3,7 +3,7 @@ public:
     int boxDelivering(vector<vector<int>>& boxes, int portsCount, int maxBoxes, int maxWeight) {
         const int N = boxes.size();
         vector<int> dp(N + 1, INT32_MAX), ports(N + 1, 0);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater< >> pq;
 
         dp[N] = 0; // base case
         ports[N] = 1;
