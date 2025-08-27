@@ -1,6 +1,6 @@
 <h2><a href="https://leetcode.com/problems/palindrome-partitioning-ii">Palindrome Partitioning II</a></h2> <img src='https://img.shields.io/badge/Difficulty-Hard-red' alt='Difficulty: Hard' /><hr><p>Given a string <code>s</code>, partition <code>s</code> such that every <span data-keyword="substring-nonempty">substring</span> of the partition is a <span data-keyword="palindrome-string">palindrome</span>.</p>
 
-<p>Return <em>the <strong>minimum</strong> cuts needed for a palindrome partitioning of</em> <code>s</code>.</p>
+<p>Return <em>the <strong>minimum</strong> cuts needed for a palindrome partitioning of</em> <ode>s</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></
