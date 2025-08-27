@@ -7,7 +7,7 @@ public:
             if((a_bit|b_bit)!=c_bit){ 
                 if(c_bit==1)f+=1;  
                 else f+=(a_bit+b_bit);  
-            }  
+            }   
         
         a>>=1;
         b>>=1;c>>=1;}
