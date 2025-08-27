@@ -14,7 +14,7 @@
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> s = &quot;a&quot;
+<strong>Input:</strong> s = &quot;a&quot
 <strong>Output:</strong> 0
 </pre>
 
