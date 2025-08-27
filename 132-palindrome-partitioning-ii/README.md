@@ -3,8 +3,7 @@
 <p>Return <em>the <strong>minimum</strong> cuts needed for a palindrome prtitioning of</em> <ode>s</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></
-
+<p><strong class="example">Example 1:</strong
 <pre>
 <strong>Input:</strong> s = &quot;aab&qu
 <strong>Output:</strong> 1
