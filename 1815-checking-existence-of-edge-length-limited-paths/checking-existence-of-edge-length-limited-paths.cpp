@@ -7,7 +7,6 @@ public:
             parent[x] = find(parent[x]); 
             
         }
-        
         return parent[x];}
     void Union(int x, int y) {
         int x_parent = find(x);
