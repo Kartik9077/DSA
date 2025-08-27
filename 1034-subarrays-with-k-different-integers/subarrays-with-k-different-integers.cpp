@@ -13,6 +13,7 @@ int atmostK(vector<int>& nums, int k){
                     m.erase(nums[l]);
                 }
                 l++;
+                    
             }
             cnt+=(r-l+1);
             r++;
