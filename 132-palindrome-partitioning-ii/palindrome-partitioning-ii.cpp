@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void helper(int l, int r, string& s, vector<int>& dp) {
+    void helper(int l, int r, string& s, vector<int>& dp) 
         int n = s.size();
         while (l >= 0 && r < n && s[l] == s[r]) {
             if (l == 0)
