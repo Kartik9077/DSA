@@ -10,7 +10,7 @@
 <strong>Explanation:</strong> The palindrome pariinin [quot,&quot;b&ot;] ould be produced using 1 curr
 </pre>
 
-<p><strong class="example">Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p
 
 <pre>
 <strong>Input:</strong> s = &quot;a&quote
