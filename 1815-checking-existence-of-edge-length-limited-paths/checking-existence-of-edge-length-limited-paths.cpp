@@ -15,6 +15,7 @@ public:
             parent[y_parent] = x_parent;
         } else if (rank[x_parent] < rank[y_parent]) {
             parent[x_parent] = y_parent;
+            
         } else {
             parent[x_parent] = y_parent;
             
