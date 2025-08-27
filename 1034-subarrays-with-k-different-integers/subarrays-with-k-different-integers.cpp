@@ -9,7 +9,7 @@ int atmostK(vector<int>& nums, int k){
              m[nums[r]]++;
             while(m.size()>k){ 
                 m[nums[l]]--;
-                if(m[nums[l]]==0){ 
+                if(m[nums[l]]==0){  
                     m.erase(nums[l]);    
                 }
                 l++;
