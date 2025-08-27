@@ -3,7 +3,7 @@
 <p>Return <em>the <strong>minimum</strong> cuts needed for a palindrome partitioning of</em> <code>s</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p
+<p><strong class="example">Example 1:</strong></
 
 <pre>
 <strong>Input:</strong> s = &quot;aab&quot
