@@ -31,7 +31,6 @@ public:
         for (int i = 0; i < queries.size(); i++) {
             queries[i].push_back(i); 
         }
-
         auto comparator = [&](vector<int>& a, vector<int>& b) {
             return a[2] < b[2];
         };
