@@ -5,7 +5,7 @@ public:
         while (l >= 0 && r < n && s[l] == s[r]) {
             if (l == 0)
                 dp[r] = 0;
-            else
+            els
                 dp[r] = min(dp[r], dp[l - 1] + 1
             l--
             r++;
