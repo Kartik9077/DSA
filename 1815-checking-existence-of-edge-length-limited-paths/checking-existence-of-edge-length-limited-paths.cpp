@@ -2,7 +2,6 @@ class Solution {
 public:
     vector<int> parent;
     vector<int> rank;
-
     int find(int x) {
         if (x != parent[x]) {
             parent[x] = find(parent[x]); 
