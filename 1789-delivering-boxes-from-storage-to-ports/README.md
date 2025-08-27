@@ -17,7 +17,7 @@
 
 <p>The ship must end at storage after all the boxes have been delivered.</p>
 
-<p>Return <em>the <strong>minimum</strong> number of <strong>trips</strong> the ship needs to make to deliver all boxes to their respective ports.</em></p>
+<p>Return <em>the <strong>minimum</strong> n umber of <strong>trips</strong> the ship needs to make to deliver all boxes to their respective ports.</em></p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
