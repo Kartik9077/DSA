@@ -12,7 +12,7 @@ public:
             const int port = boxes[i][0], w = boxes[i][1];
             weight += w;
             taken_boxes += 1;
-            ports[i] = ports[i + 1] +(port != last_port);
+            ports[i] = ports[i + 1] +(port!= last_port);
             while (taken_boxes > maxBoxes || weight> maxWeight){
                 taken_boxes -= end == N ? 0 : 1;
                 weight -= end == N ? 0 : boxes[end][1];
