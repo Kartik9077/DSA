@@ -11,7 +11,7 @@ int atmostK(vector<int>& nums, int k){
                 m[nums[l]]--;
                 if(m[nums[l]]==0){   
                     m.erase(nums[l]);    
-                }
+                } 
                 l++;
                     
             }
