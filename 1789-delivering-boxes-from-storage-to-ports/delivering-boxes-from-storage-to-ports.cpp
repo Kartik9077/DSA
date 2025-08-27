@@ -13,7 +13,7 @@ public:
             weight += w;
             taken_boxes += 1;
             ports[i] = ports[i + 1] + (port != last_port);
-            while (taken_boxes > maxBoxes || weight > maxWeight) {
+            while (taken_boxes > maxBoxes || weight > maxWeight){
                 taken_boxes -= end == N ? 0 : 1;
                 weight -= end == N ? 0 : boxes[end][1];
                 end -= 1;
