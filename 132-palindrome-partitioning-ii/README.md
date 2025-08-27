@@ -6,7 +6,7 @@
 <p><strong class="example">Example 1:</strong></
 
 <pre>
-<strong>Input:</strong> s = &quot;aab&quo
+<strong>Input:</strong> s = &quot;aab&qu
 <strong>Output:</strong> 1
 <strong>Explanation:</strong> The palindrome partiionin [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut
 </pre>
