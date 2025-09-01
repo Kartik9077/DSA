@@ -1,27 +1,16 @@
 class Solution {
 public:
-    int totalNumbers(vector<int>& digits) {
-        vector<int> freq(10, 0);
-        for (int d : digits) freq[d]++;
-        int ans = 0;
-
-        for (int third = 0; third <= 9; third += 2) {
-            if (freq[third] == 0) continue;
-            freq[third]--;
-            for (int second = 0; second <= 9; second++) {
-                if (freq[second] == 0) continue;
-                freq[second]--;
-                for (int first = 1; first <= 9; first++) {
-                    if (freq[first] > 0) {
-                        ans++;
-                    }
+    int totalNumbers(vector<int>& d) {
+   set<int>st;
+    for(int i=0;i<d.size();i++){
+        for(int j=0;j<d.size();j++){
+            for(int k=0;k<d.size();k++){
+                if(i!=j&&i!=k&&j!=k&&d[i]!=0&&d[k]%2==0){
+                    st.insert(d[i]*100+d[j]*10+d[k]);
                 }
-                freq[second]++;
             }
-            freq[third]++;
         }
-
-        return ans;
-
+    }
+    return st.size();
     }
 };
