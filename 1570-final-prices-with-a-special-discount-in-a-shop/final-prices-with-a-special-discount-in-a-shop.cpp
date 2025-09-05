@@ -1,9 +1,13 @@
 class Solution {
 public:
-    vector<int> finalPrices(vector<int>& p) {
-        for(int i=0;i<p.size()-1;i++){
-            for(int j=i+1;j<p.size();j++){
-                if(p[j]<=p[i]){p[i]=p[i]-p[j];break;}
-            } }return p;
+    vector<int> finalPrices(vector<int>& prices) {
+        stack<int>st;
+        vector<int>ans=prices;
+        for(int i=prices.size()-1;i>=0;i--){
+            while(!st.empty()&&st.top()>ans[i])st.pop();
+            if(!st.empty())ans[i]=ans[i]-st.top();
+            st.push(prices[i]);
+        }
+        return ans;
     }
 };
