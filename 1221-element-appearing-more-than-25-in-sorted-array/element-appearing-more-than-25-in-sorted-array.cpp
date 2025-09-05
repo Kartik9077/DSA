@@ -1,12 +1,16 @@
 class Solution {
 public:
     int findSpecialInteger(vector<int>& arr) {
-        unordered_map<int,int>mpp;
-        for(auto it:arr)mpp[it]++;
-        for(auto it:mpp){
-            if(it.second>(int)(arr.size()/4))return it.first;
-        }
-        return 0;
+       int t=(int)arr.size()/4;
+       vector<int>nums=arr;
+       int curr=1;
+      for(int i=1;i<arr.size();i++){
+        if(nums[i]!=nums[i-1])curr=1;
+        else curr++;
+        if(curr>t)return nums[i];
+      }
+      if(curr>t)return nums[nums.size()-1];
+      return 0;
         
     }
 };
