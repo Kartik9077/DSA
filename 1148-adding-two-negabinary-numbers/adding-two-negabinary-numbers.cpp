@@ -1,7 +1,6 @@
 class Solution {
 public:
-using ll=long long;
-
+typedef long long ll;
     vector<int> addNegabinary(vector<int>& arr1, vector<int>& arr2) {
          ll i = arr1.size() - 1, j = arr2.size() - 1;
          ll carry = 0;
