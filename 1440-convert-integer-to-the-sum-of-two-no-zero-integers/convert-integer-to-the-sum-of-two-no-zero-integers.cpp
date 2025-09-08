@@ -1,29 +1,18 @@
 class Solution {
 public:
-    bool isValid(int num){
-
-        while(num){
-
-            if(num%10==0){
-
-                return false;
-            }
-            num /= 10;
-        }
-        return true;
+bool check( int a){
+    while(a>0){
+        if((a%10)==0)return 0;
+        a/=10;
     }
+    return 1;
+}
     vector<int> getNoZeroIntegers(int n) {
-        
+        int a=0,b=0;
         for(int i=1;i<n;i++){
-
-            int a = i;
-            int b = n-i;
-
-            if(isValid(a) && isValid(b)){
-
-                return {a,b};
-            }
+            a=i,b=n-i;
+            if(check(a)&&check(b))return {a,b};
         }
-        return{};
+        return {0};
     }
 };
