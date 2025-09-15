@@ -10,15 +10,14 @@ bool check(string a,string b){
     int canBeTypedWords(string text, string br) {
         unordered_set<char>st;int ans=0;
         for(auto it:br)st.insert(it);
-        int j=0,i=0;string k;
+        int j=0,i=0;
         for(i;i<text.size();i++){
-            if(text[i]!=' ')k+=text[i];
-           else {
-               if(check(k,br))ans+=1;
-               k="";
+             if(text[i]==' '){
+               if(check(text.substr(j,i-j),br))ans+=1;
+               j=i;
              }
         }
-         if(check(k,br))ans+=1;
+         if(check(text.substr(j,i-j),br))ans+=1;
     return ans;
     }
 };
