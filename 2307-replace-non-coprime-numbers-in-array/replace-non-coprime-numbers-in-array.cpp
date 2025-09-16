@@ -2,16 +2,11 @@ class Solution {
 public:
   int callcm(int a,int b){
      long long lcm=(long long )a * (long long )b;
-     lcm/=check(a,b);
+     lcm/=gcd(a,b);
      return (int)lcm;
   }
   int  check(int a,int b){
-    while(b!=0){
-        int temp=b;
-        b=a%b;
-        a=temp;
-    }
-    return a;
+    return gcd(a,b);
   }
     vector<int> replaceNonCoprimes(vector<int>& nums) {
         if(nums.size()<2)return nums;
