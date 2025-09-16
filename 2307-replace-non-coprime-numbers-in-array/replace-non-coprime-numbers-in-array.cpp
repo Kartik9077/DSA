@@ -6,7 +6,13 @@ public:
      return (int)lcm;
   }
   int  check(int a,int b){
-    return gcd(a,b);
+    while(a!=0){
+        int t=a;
+        a=b%a;
+        b=t;
+    }
+    return b;
+    // return gcd(a,b);
   }
     vector<int> replaceNonCoprimes(vector<int>& nums) {
         if(nums.size()<2)return nums;
