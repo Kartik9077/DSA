@@ -5,7 +5,7 @@
 var expect = function(val) {
     return {
     
-    toBe:function(x){
+    toBe(x){
         if(x===val){
             return true;
         }
@@ -13,7 +13,7 @@ var expect = function(val) {
             throw new Error('Not Equal');
         }
     },
-    notToBe:function(x){
+    notToBe(x){
         if(x!==val){
      return true;
         }
